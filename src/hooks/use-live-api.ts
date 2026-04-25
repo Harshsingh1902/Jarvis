@@ -6,7 +6,7 @@ import { audioContext } from "../lib/utils";
 import { LiveConnectConfig } from "@google/genai";
 
 const VolMeterWorket = '/worklets/vol-meter.js';
-const AudioRecordingWorklet = '/worklets/audio-processing.js';
+// const AudioRecordingWorklet = '/worklets/audio-processing.js';
 
 
 
