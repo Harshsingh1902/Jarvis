@@ -1,3 +1,17 @@
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { GenAILiveClient } from "../lib/genai-live-client";
+import { LiveClientOptions } from "../types";
+import { AudioStreamer } from "../lib/audio-streamer";
+import { audioContext } from "../lib/utils";
+import { LiveConnectConfig } from "@google/genai";
+
+const VolMeterWorket = '/worklets/vol-meter.js';
+const AudioRecordingWorklet = '/worklets/audio-processing.js';
+
+
+
+
+
 /**
  * Copyright 2024 Google LLC
  *
@@ -14,13 +28,8 @@
  * limitations under the License.
  */
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { GenAILiveClient } from "../lib/genai-live-client";
-import { LiveClientOptions } from "../types";
-import { AudioStreamer } from "../lib/audio-streamer";
-import { audioContext } from "../lib/utils";
-import VolMeterWorket from "../lib/worklets/vol-meter";
-import { LiveConnectConfig } from "@google/genai";
+
+// Add these two lines here:
 
 export type UseLiveAPIResults = {
   client: GenAILiveClient;

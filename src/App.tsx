@@ -23,7 +23,7 @@ import ControlTray from "./components/control-tray/ControlTray";
 import cn from "classnames";
 import { LiveClientOptions } from "./types";
 
-const API_KEY = process.env.REACT_APP_GEMINI_API_KEY as string;
+const API_KEY = "AIzaSyAKn-H53Tzx-Ss5GkYvOyDzZ1-NiQ_onrI";
 if (typeof API_KEY !== "string") {
   throw new Error("set REACT_APP_GEMINI_API_KEY in .env");
 }
